@@ -1,0 +1,344 @@
+/* This is for tablets (width < 1024px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 24px;
+    .mobileviewmenu {
+      display: block !important;
+    }
+    .rightheaderoption {
+      display: none !important;
+    }
+
+    .bannercontent {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .leftbannercontent {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+
+        .leftbannerfirst {
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 38px;
+          color: #ffffff;
+        }
+        .leftbannerbuttons {
+          width: 100%;
+          display: block;
+          margin-bottom: 24px;
+          button {
+            height: 55px;
+            width: 221px;
+            padding: 16px 24px 16px 24px;
+          }
+          .leftfirstbutton {
+            margin-bottom: 15px;
+          }
+        }
+        .bannerstat {
+          justify-content: space-around;
+          padding: 0;
+        }
+      }
+      .rightbannercontent {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        .rightbannercardcontent {
+          position: absolute;
+          right: 100px;
+          bottom: 0;
+          padding-left: 0;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  .bannerlogo {
+    display: none;
+    padding: 0px;
+  }
+
+  .benefits_container {
+    width: 100%;
+    padding: 0px;
+    .maintop {
+      margin: 25px 55px 0px 70px;
+
+      p {
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 52px;
+        letter-spacing: -0.02em;
+        color: #1d1c31;
+        margin-bottom: 0;
+      }
+      .maincards {
+        display: block;
+        margin-top: 25px;
+        .carditems {
+          margin-bottom: 20px;
+          padding: 24px 16px 24px 16px;
+          .carditems_read {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .mainpictures {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      .mainforefront {
+        position: static;
+        padding: 25px 60px 25px 25px;
+
+        .forefronttext {
+          .uppertext {
+            width: 50%;
+
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 31px;
+            /* or 155% */
+
+            /* Text */
+            color: #1d1c31;
+          }
+          .lowertext {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            /* or 200% */
+
+            color: rgba(29, 28, 49, 0.6);
+          }
+        }
+        .forefrontbuttons {
+          img {
+            height: 40px;
+            width: 135px;
+          }
+        }
+      }
+    }
+    .clientsheader {
+      display: none;
+    }
+  }
+
+  .guideline_container {
+    padding: 0px;
+
+    .timeline {
+      padding: 24px;
+      .uppertimeline {
+        .upperlefttimeline {
+          width: 100%;
+          text-align: center;
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 52px;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+          padding: 0px;
+        }
+        .upperrighttimeline {
+          display: none;
+        }
+      }
+      .lowertimeline {
+        display: none;
+      }
+      .mobiletimelinecontainer {
+        display: block !important;
+        padding-top: 24px;
+        .mobiletimeline {
+          margin-bottom: 24px;
+          .mobiletimediv {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .mobiledescbox {
+              padding: 24px 30px 0px 30px;
+              border: 2px solid rgba(255, 255, 255, 0.1);
+              border-radius: 8px;
+              .innerarticondiv {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding-bottom: 25px;
+                span {
+                  font-family: "Plus Jakarta Sans";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 18px;
+
+                  /* #FFFFFF */
+                  color: #ffffff;
+                }
+              }
+            }
+            .buttonelements {
+              button {
+                width: 135px;
+                height: 44px;
+                border: none;
+                background: #ffffff;
+                border-radius: 8px;
+
+                font-family: "Plus Jakarta Sans";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+
+                /* Text */
+                color: #1d1c31;
+              }
+            }
+          }
+        }
+        .linkmore {
+          display: flex;
+          justify-content: center;
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+          span {
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 0px;
+    .footerdiv {
+      padding: 24px;
+      .upperdiv {
+        display: block;
+        .upperdivleft {
+          padding: 0px;
+          height: 100%;
+          width: 100%;
+          background-color: transparent;
+          .upperdivleftheader {
+            margin: 0;
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            color: #1d1c31;
+            margin-bottom: 24px;
+          }
+          .upperdivleftdesc {
+            color: black;
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            margin: 0;
+            margin-bottom: 15px;
+          }
+          .upperdivleftreg {
+            display: block;
+            .upperdivleftregem {
+              border: none;
+              input {
+                margin: 0;
+                padding: 0px 0px 10px 5px;
+                border-bottom: 2px solid rgba(29, 28, 49, 0.2);
+                font-family: "Plus Jakarta Sans";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(29, 28, 49, 0.5);
+              }
+              input::placeholder {
+                color: rgba(29, 28, 49, 0.5);
+              }
+            }
+            button {
+              width: 192px;
+              height: 45px;
+              margin-top: 15px;
+              margin-bottom: 5px;
+              background: #4e46e8;
+              border-radius: 8px;
+              font-family: "Plus Jakarta Sans";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 18px;
+              color: #ffffff;
+            }
+          }
+        }
+        .upperdivright {
+          padding-right: 0;
+        }
+      }
+      .lowerdiv {
+        display: none;
+      }
+      .mobilelowerdiv {
+        display: block !important;
+        .logos {
+          order: 1;
+          margin-bottom: 15px;
+          margin-top: 10px;
+        }
+        .mobilefooternote{
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            
+            color: rgba(29, 28, 49, 0.6);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

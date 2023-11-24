@@ -1,0 +1,1318 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Libre+Baskerville&family=Lobster+Two&family=Plus+Jakarta+Sans&family=Poppins:wght@500&family=Roboto&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* MAKING A CONTAINER THAT CONTAINS ALL THE FIRST PAGE (BANNER) ELEMENTS */
+.container {
+  width: 100%;
+  padding: 30px 256px 140px 256px;
+}
+.container .headeroptions {
+  display: flex;
+  justify-content: space-between;
+}
+.container .headeroptions .headerimgdiv {
+  display: flex;
+  align-items: center;
+}
+.container .headeroptions .mobileviewmenu {
+  display: none;
+}
+.container .headeroptions .rightheaderoption {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 32px;
+}
+.container .headeroptions .rightheaderoption button {
+  padding: 12px 24px 12px 24px;
+  border-radius: 8px;
+  border: none;
+}
+.container .bannercontent {
+  display: flex;
+  padding-top: 90px;
+}
+.container .bannercontent .leftbannercontent {
+  width: 50%;
+}
+.container .bannercontent .leftbannercontent .leftbannerfirst {
+  margin-bottom: 32px;
+}
+.container .bannercontent .leftbannercontent .leftbannersecond {
+  margin-bottom: 32px;
+}
+.container .bannercontent .leftbannercontent .leftbannerbuttons {
+  width: 100%;
+  display: flex;
+  gap: 32.33px;
+  margin-bottom: 40px;
+}
+.container .bannercontent .leftbannercontent .leftbannerbuttons .leftfirstbutton {
+  border: none;
+}
+.container .bannercontent .leftbannercontent .bannerstat {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+.container .bannercontent .leftbannercontent .bannerstat h1 {
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+.container .bannercontent .rightbannercontent {
+  width: 50%;
+  padding-left: 5%;
+  position: relative;
+  display: flex;
+}
+.container .bannercontent .rightbannercontent .rightbannercardcontent {
+  position: absolute;
+  padding-top: 155px;
+  padding-left: 198px;
+}
+
+.bannerlogo {
+  display: flex;
+  padding: 24px 256px;
+  justify-content: space-between;
+  background: rgb(97, 88, 255);
+}
+
+.benefits_container {
+  width: 100%;
+  padding: 120px 256px 0 256px;
+}
+.benefits_container .maintop p {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.benefits_container .maintop .maincards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 115px;
+  gap: 32px;
+  margin-top: 40px;
+}
+.benefits_container .maintop .carditems img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.benefits_container .maintop .carditems .carditems_name {
+  margin: 24px auto;
+}
+.benefits_container .maintop .carditems .carditems_read {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 32px;
+}
+.benefits_container .maintop .carditems .carditems_read img {
+  padding-left: 5px;
+}
+.benefits_container .mainpictures {
+  position: relative;
+  padding-right: 240px;
+}
+.benefits_container .mainpictures img {
+  width: 100%;
+}
+.benefits_container .mainpictures .mainforefront {
+  position: absolute;
+  top: 50px;
+  left: 600px;
+  padding: 30px 52px 30px 52px;
+}
+.benefits_container .mainpictures .mainforefront p {
+  margin: 0;
+}
+.benefits_container .mainpictures .mainforefront .lowertext {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.benefits_container .mainpictures .mainforefront .forefrontbuttons {
+  display: flex;
+  gap: 24px;
+}
+.benefits_container .clientsheader {
+  margin-top: 120px;
+}
+.benefits_container .clientsheader .clientsheadertop {
+  display: flex;
+  justify-content: space-between;
+}
+.benefits_container .clientsheader .clientsheadertop .clientsheadertoparrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.benefits_container .clientsheader .clientsheadertop .clientsheadertoparrow .clientsheadertoparrowdiv {
+  padding: 14px;
+}
+.benefits_container .clientsheader .clientscards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 40px auto 40px auto;
+}
+.benefits_container .clientsheader .clientscards .clientitems:nth-child(1) {
+  background-color: #5d55ff;
+  color: white;
+}
+.benefits_container .clientsheader .clientscards .clientitems {
+  position: relative;
+  border-radius: 8px;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes {
+  padding: 0px 32px 25px 32px;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .comment {
+  padding-bottom: 32px;
+  margin-bottom: 20px;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .clientcommentsinfo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .clientcommentsinfo .userpic {
+  width: 80px;
+  height: 80px;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .clientcommentsinfo .userpic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .clientcommentsinfo .userdetail p {
+  margin: 0;
+  padding-bottom: 8px;
+}
+.benefits_container .clientsheader .paginationrectangle {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 120px;
+}
+.benefits_container .clientsheader .paginationrectangle .parallelogram {
+  width: 71px;
+  height: 8px;
+}
+
+.guideline_container {
+  width: 100%;
+  padding: 70px 256px 140px 256px;
+}
+.guideline_container .timeline .uppertimeline {
+  display: flex;
+  gap: 375px;
+}
+.guideline_container .timeline .uppertimeline .upperrighttimeline {
+  display: flex;
+  gap: 30px;
+}
+.guideline_container .timeline .mobiletimelinecontainer {
+  display: none;
+}
+.guideline_container .timeline .lowertimeline {
+  margin-top: 100px;
+}
+.guideline_container .timeline .lowertimeline .descriptiondiv {
+  padding: 30px 40px 0px 40px;
+}
+.guideline_container .timeline .lowertimeline .descriptiondiv .innerarticondiv {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 25px;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline {
+  display: flex;
+  gap: 45px;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline .buttonparent {
+  position: relative;
+  width: 230px;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline .buttonparent .buttonchildren {
+  position: absolute;
+  bottom: 0;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline .buttonparent .buttonchildren .buttonelements button {
+  width: 235px;
+  height: 55px;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline .buttonparent .buttonchildren .circleelement {
+  position: absolute;
+  bottom: -55px;
+  left: 100px;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline .buttonparent .buttonchildren .circleelement .outercircle {
+  position: relative;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline .buttonparent .buttonchildren .circleelement .outercircle .innercircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.guideline_container .timeline .lowertimeline .lowerbelowtimeline {
+  display: flex;
+  gap: 45px;
+  padding-top: 35px;
+}
+.guideline_container .timeline .lowertimeline .lowerbelowtimeline .buttonparent {
+  position: relative;
+  width: 230px;
+}
+.guideline_container .timeline .lowertimeline .lowerbelowtimeline .buttonparent .buttonchildren {
+  position: absolute;
+  top: 0;
+}
+.guideline_container .timeline .lowertimeline .lowerbelowtimeline .buttonparent .buttonchildren .buttonelements button {
+  width: 235px;
+  height: 55px;
+}
+.guideline_container .timeline .lowertimeline .lowerbelowtimeline .buttonparent .buttonchildren .circleelement {
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+.guideline_container .timeline .lowertimeline .lowerbelowtimeline .buttonparent .buttonchildren .circleelement .outercircle {
+  position: relative;
+}
+.guideline_container .timeline .lowertimeline .lowerbelowtimeline .buttonparent .buttonchildren .circleelement .outercircle .innercircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  padding: 70px 255px 30px 255px;
+}
+.footer .footerdiv .upperdiv {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footerdiv .upperdiv .upperdivleft {
+  padding: 32px 32px 0px 32px;
+  width: 570px;
+  height: 245px;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftheader {
+  margin-bottom: 15px;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftdesc {
+  margin-bottom: 40px;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg .upperdivleftregem input {
+  width: 300px;
+  margin-right: 30px;
+  padding: 16px 0 16px 16px;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg button {
+  padding: 0px;
+  margin: 0px;
+  padding: 16px 32px 16px 32px;
+}
+.footer .footerdiv .upperdiv .upperdivright {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding-right: 100px;
+}
+.footer .footerdiv .lowerdiv {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin-top: 40px;
+}
+.footer .footerdiv .mobilelowerdiv {
+  display: none;
+}
+
+.container {
+  background-image: linear-gradient(to right, #362fcc, #5d55ff);
+  color: #ffffff;
+}
+.container .rightheaderoption {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b6b3eb;
+}
+.container .rightheaderoption #home {
+  color: #ffffff;
+}
+.container .rightheaderoption button {
+  background: rgba(255, 255, 255, 0.1019607843);
+  border-radius: 8px;
+  color: #ffffff;
+}
+.container .leftbannercontent .leftbannerfirst {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 70px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.container .leftbannercontent .leftbannersecond {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #b6b3eb;
+}
+.container .leftbannercontent .leftbannerbuttons .leftfirstbutton {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #110c64;
+  padding: 24px 32px 24px 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.container .leftbannercontent .leftbannerbuttons .leftsecondbutton {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 24px 32px 24px 32px;
+  color: #ffffff;
+  background-color: transparent;
+}
+.container .leftbannercontent .banner h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.container .leftbannercontent .bannerstat p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b6b3eb;
+}
+
+.benefits_container .maintop p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #1d1c31;
+}
+.benefits_container .maintop .maincards .carditems:not(:first-child) {
+  border: 1px solid rgba(29, 28, 49, 0.1);
+}
+.benefits_container .maintop .maincards .carditems {
+  box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+  border-radius: 8px;
+  padding: 32px 24px;
+}
+.benefits_container .maintop .maincards .carditems .carditems_name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1d1c31;
+  text-align: center;
+}
+.benefits_container .maintop .maincards .carditems .carditems_des {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(29, 28, 49, 0.6);
+}
+.benefits_container .maintop .maincards .carditems .carditems_read {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #5d55ff;
+}
+.benefits_container .mainpictures .mainforefront {
+  background: #ffffff;
+  box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+  border-radius: 8px;
+}
+.benefits_container .mainpictures .mainforefront .forefronttext .uppertext {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #1d1c31;
+}
+.benefits_container .mainpictures .mainforefront .forefronttext .lowertext {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(29, 28, 49, 0.6);
+}
+.benefits_container .clientsheader .clientsheadertop .clientsheadertopleft {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #1d1c31;
+}
+.benefits_container .clientsheader .clientsheadertop .clientsheadertoparrow .clientsheadertoparrowdiv {
+  background-color: rgba(29, 28, 49, 0.05);
+  border-radius: 50px;
+}
+.benefits_container .clientsheader .clientscards .clientitems {
+  color: black;
+  box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+  border-radius: 8px;
+  border: 1px solid rgba(29, 28, 49, 0.1);
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .comment {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  border-bottom: 1px solid gray;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .clientcommentsinfo .userdetail .username {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.benefits_container .clientsheader .clientscards .clientitems .clientitemsdes .clientcommentsinfo .userdetail .userdate {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: gray;
+}
+.benefits_container .clientsheader .paginationrectangle #first_para {
+  background-color: rgb(93, 85, 255);
+}
+.benefits_container .clientsheader .paginationrectangle .parallelogram {
+  transform: skew(-40deg);
+  background-color: rgba(29, 28, 49, 0.1);
+}
+
+.guideline_container {
+  background-color: rgb(93, 85, 255);
+  color: #ffffff;
+}
+.guideline_container .timeline .uppertimeline .upperlefttimeline {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.guideline_container .timeline .uppertimeline .upperrighttimeline {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.guideline_container .timeline .lowertimeline .descriptiondiv {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.guideline_container .timeline .lowertimeline .descriptiondiv .innerarticondiv span {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.guideline_container .timeline .lowertimeline .buttonparent .buttonchildren .buttonelements button {
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1d1c31;
+  border: none;
+}
+.guideline_container .timeline .lowertimeline .lowerabovetimeline {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 35px;
+}
+
+.footer {
+  background-color: rgba(93, 85, 255, 0.1);
+}
+.footer .footerdiv .upperdiv .upperdivleft {
+  background-color: rgb(29, 28, 49);
+  border-radius: 8px;
+  color: #ffffff;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftheader {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftdesc {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg {
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg .upperdivleftregem {
+  border-bottom: 1px solid #ffffff;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg .upperdivleftregem input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #ffffff;
+}
+.footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg .upperdivleftregem input::placeholder {
+  color: #ffffff;
+}
+.footer .footerdiv .upperdiv .upperdivleft button {
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  color: #1d1c31;
+}
+.footer .footerdiv .upperdiv .upperdivright {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(29, 28, 49, 0.6);
+}
+.footer .footerdiv .upperdiv .upperdivright #first {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1d1c31;
+}
+.footer .footerdiv .lowerdiv {
+  border-top: 2px solid rgba(29, 28, 49, 0.1);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(29, 28, 49, 0.6);
+}
+
+/* This is for tablets (width < 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 40px 40px 90px 40px;
+  }
+  .bannercontent {
+    padding: 55px 0px 0px 0px !important;
+    display: flex;
+  }
+  .leftbannercontent {
+    width: 60%;
+  }
+  .rightbannercontent {
+    padding-left: 80px !important;
+  }
+}
+/* This is for tablets (width < 1024px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 24px;
+  }
+  .container .mobileviewmenu {
+    display: block !important;
+  }
+  .container .rightheaderoption {
+    display: none !important;
+  }
+  .container .bannercontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .bannercontent .leftbannercontent {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .container .bannercontent .leftbannercontent .leftbannerfirst {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 38px;
+    color: #ffffff;
+  }
+  .container .bannercontent .leftbannercontent .leftbannerbuttons {
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .container .bannercontent .leftbannercontent .leftbannerbuttons button {
+    height: 55px;
+    width: 221px;
+    padding: 16px 24px 16px 24px;
+  }
+  .container .bannercontent .leftbannercontent .leftbannerbuttons .leftfirstbutton {
+    margin-bottom: 15px;
+  }
+  .container .bannercontent .leftbannercontent .bannerstat {
+    justify-content: space-around;
+    padding: 0;
+  }
+  .container .bannercontent .rightbannercontent {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .container .bannercontent .rightbannercontent .rightbannercardcontent {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .bannerlogo {
+    display: none;
+    padding: 0px;
+  }
+  .benefits_container {
+    width: 100%;
+    padding: 0px;
+  }
+  .benefits_container .maintop {
+    margin: 25px 55px 0px 70px;
+  }
+  .benefits_container .maintop p {
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: #1d1c31;
+    margin-bottom: 0;
+  }
+  .benefits_container .maintop .maincards {
+    display: block;
+    margin-top: 25px;
+  }
+  .benefits_container .maintop .maincards .carditems {
+    margin-bottom: 20px;
+    padding: 24px 16px 24px 16px;
+  }
+  .benefits_container .maintop .maincards .carditems .carditems_read {
+    display: flex;
+    justify-content: center;
+  }
+  .benefits_container .mainpictures {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .benefits_container .mainpictures .mainforefront {
+    position: static;
+    padding: 25px 60px 25px 25px;
+  }
+  .benefits_container .mainpictures .mainforefront .forefronttext .uppertext {
+    width: 50%;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    /* or 155% */
+    /* Text */
+    color: #1d1c31;
+  }
+  .benefits_container .mainpictures .mainforefront .forefronttext .lowertext {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    /* or 200% */
+    color: rgba(29, 28, 49, 0.6);
+  }
+  .benefits_container .mainpictures .mainforefront .forefrontbuttons img {
+    height: 40px;
+    width: 135px;
+  }
+  .benefits_container .clientsheader {
+    display: none;
+  }
+  .guideline_container {
+    padding: 0px;
+  }
+  .guideline_container .timeline {
+    padding: 24px;
+  }
+  .guideline_container .timeline .uppertimeline .upperlefttimeline {
+    width: 100%;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    padding: 0px;
+  }
+  .guideline_container .timeline .uppertimeline .upperrighttimeline {
+    display: none;
+  }
+  .guideline_container .timeline .lowertimeline {
+    display: none;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer {
+    display: block !important;
+    padding-top: 24px;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .mobiletimeline {
+    margin-bottom: 24px;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .mobiletimeline .mobiletimediv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .mobiletimeline .mobiletimediv .mobiledescbox {
+    padding: 24px 30px 0px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .mobiletimeline .mobiletimediv .mobiledescbox .innerarticondiv {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .mobiletimeline .mobiletimediv .mobiledescbox .innerarticondiv span {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* #FFFFFF */
+    color: #ffffff;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .mobiletimeline .mobiletimediv .buttonelements button {
+    width: 135px;
+    height: 44px;
+    border: none;
+    background: #ffffff;
+    border-radius: 8px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* Text */
+    color: #1d1c31;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .linkmore {
+    display: flex;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  .guideline_container .timeline .mobiletimelinecontainer .linkmore span {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .footer {
+    padding: 0px;
+  }
+  .footer .footerdiv {
+    padding: 24px;
+  }
+  .footer .footerdiv .upperdiv {
+    display: block;
+  }
+  .footer .footerdiv .upperdiv .upperdivleft {
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+  .footer .footerdiv .upperdiv .upperdivleft .upperdivleftheader {
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1d1c31;
+    margin-bottom: 24px;
+  }
+  .footer .footerdiv .upperdiv .upperdivleft .upperdivleftdesc {
+    color: black;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg {
+    display: block;
+  }
+  .footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg .upperdivleftregem {
+    border: none;
+  }
+  .footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg .upperdivleftregem input {
+    margin: 0;
+    padding: 0px 0px 10px 5px;
+    border-bottom: 2px solid rgba(29, 28, 49, 0.2);
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(29, 28, 49, 0.5);
+  }
+  .footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg .upperdivleftregem input::placeholder {
+    color: rgba(29, 28, 49, 0.5);
+  }
+  .footer .footerdiv .upperdiv .upperdivleft .upperdivleftreg button {
+    width: 192px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background: #4e46e8;
+    border-radius: 8px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .footer .footerdiv .upperdiv .upperdivright {
+    padding-right: 0;
+  }
+  .footer .footerdiv .lowerdiv {
+    display: none;
+  }
+  .footer .footerdiv .mobilelowerdiv {
+    display: block !important;
+  }
+  .footer .footerdiv .mobilelowerdiv .logos {
+    order: 1;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .footer .footerdiv .mobilelowerdiv .mobilefooternote {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(29, 28, 49, 0.6);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

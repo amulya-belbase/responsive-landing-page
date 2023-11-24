@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* MAKING A CONTAINER THAT CONTAINS ALL THE FIRST PAGE (BANNER) ELEMENTS */
+$full-width: 100%;
+$half-width: 50%;
+
+.container {
+  width: $full-width;
+  padding: 30px 256px 140px 256px;
+
+  // FOR HEADER LAYOUT
+
+  .headeroptions {
+    display: flex;
+    justify-content: space-between;
+
+    .headerimgdiv {
+      display: flex;
+      align-items: center;
+    }
+    .mobileviewmenu {
+      display: none;
+    }
+    .rightheaderoption {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 32px;
+      button {
+        padding: 12px 24px 12px 24px;
+        border-radius: 8px;
+        border: none;
+      }
+    }
+  }
+
+  // HERO PART (LAYOUT)
+
+  .bannercontent {
+    display: flex;
+    padding-top: 90px;
+    .leftbannercontent {
+      width: $half-width;
+      .leftbannerfirst {
+        margin-bottom: 32px;
+      }
+      .leftbannersecond {
+        margin-bottom: 32px;
+      }
+      .leftbannerbuttons {
+        width: $full-width;
+        display: flex;
+        gap: 32.33px;
+        margin-bottom: 40px;
+        .leftfirstbutton {
+          border: none;
+        }
+      }
+      .bannerstat {
+        display: flex;
+        width: $full-width;
+        justify-content: space-between;
+        padding-right: 80px;
+        h1 {
+          margin-bottom: 4px;
+          margin-top: 0px;
+        }
+      }
+    }
+    .rightbannercontent {
+      width: $half-width;
+      padding-left: 5%;
+      position: relative;
+      display: flex;
+      .rightbannercardcontent {
+        position: absolute;
+        padding-top: 155px;
+        padding-left: 198px;
+      }
+    }
+  }
+}
+
+// COMPANY LOGOS BELOW BANNER (container)
+.bannerlogo {
+  display: flex;
+  padding: 24px 256px;
+  justify-content: space-between;
+  background: rgb(97, 88, 255);
+}
+
+//  OUR KEY BENEFITS PAGE below company logos
+.benefits_container {
+  width: $full-width;
+  padding: 120px 256px 0 256px;
+
+  // FOR KEY BENEFITS AND CARDS
+  .maintop {
+    p {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    .maincards {
+      display: flex;
+      width: $full-width;
+      justify-content: space-between;
+      margin-bottom: 115px;
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .carditems {
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .carditems_name {
+        margin: 24px auto;
+      }
+      .carditems_read {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 32px;
+        img {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  // FOR THE PICTURES BELOW
+  .mainpictures {
+    position: relative;
+    padding-right: 240px;
+    img {
+      width: $full-width;
+    }
+    .mainforefront {
+      position: absolute;
+      top: 50px;
+      left: 600px;
+      padding: 30px 52px 30px 52px;
+      p {
+        margin: 0;
+      }
+      .lowertext {
+        padding-top: 24px;
+        padding-bottom: 40px;
+      }
+      .forefrontbuttons {
+        display: flex;
+        gap: 24px;
+      }
+    }
+  }
+
+  // FOR THE CLIENTS TESTIMONIALS TITLE
+  .clientsheader {
+    margin-top: 120px;
+    .clientsheadertop {
+      display: flex;
+      justify-content: space-between;
+
+      .clientsheadertoparrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        .clientsheadertoparrowdiv {
+          padding: 14px;
+        }
+      }
+    }
+
+    // FOR THE CLIENTS TESTIMONIALS CARDS
+    .clientscards {
+      display: flex;
+      width: $full-width;
+      justify-content: space-between;
+      gap: 32px;
+      margin: 40px auto 40px auto;
+
+      .clientitems:nth-child(1) {
+        background-color: #5d55ff;
+        color: white;
+      }
+      .clientitems {
+        position: relative;
+        border-radius: 8px;
+        .clientitemsdes {
+          padding: 0px 32px 25px 32px;
+          .comment {
+            padding-bottom: 32px;
+            margin-bottom: 20px;
+          }
+          .clientcommentsinfo {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .userpic {
+              width: 80px;
+              height: 80px;
+              img {
+                width: $full-width;
+                height: $full-width;
+                border-radius: 50px;
+              }
+            }
+            .userdetail {
+              p {
+                margin: 0;
+                padding-bottom: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // FOR PAGINATION
+    .paginationrectangle {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      margin-bottom: 120px;
+      .parallelogram {
+        width: 71px;
+        height: 8px;
+      }
+    }
+  }
+}
+
+// GUIDELINE CONTAINER
+.guideline_container {
+  width: 100%;
+  padding: 70px 256px 140px 256px;
+  .timeline {
+    .uppertimeline {
+      display: flex;
+      gap: 375px;
+      .upperrighttimeline {
+        display: flex;
+        gap: 30px;
+      }
+    }
+
+    .mobiletimelinecontainer {
+      display: none;
+    }
+
+    .lowertimeline {
+      margin-top: 100px;
+      .descriptiondiv {
+        padding: 30px 40px 0px 40px;
+        .innerarticondiv {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding-bottom: 25px;
+        }
+      }
+
+      .lowerabovetimeline {
+        display: flex;
+        gap: 45px;
+        .buttonparent {
+          position: relative;
+          width: 230px;
+          .buttonchildren {
+            position: absolute;
+            bottom: 0;
+            .buttonelements {
+              button {
+                width: 235px;
+                height: 55px;
+              }
+            }
+            .circleelement {
+              position: absolute;
+              bottom: -55px;
+              left: 100px;
+              .outercircle {
+                position: relative;
+                .innercircle {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .lowerbelowtimeline {
+        display: flex;
+        gap: 45px;
+        padding-top: 35px;
+        .buttonparent {
+          position: relative;
+          width: 230px;
+          .buttonchildren {
+            position: absolute;
+            top: 0;
+            .buttonelements {
+              button {
+                width: 235px;
+                height: 55px;
+              }
+            }
+            .circleelement {
+              position: absolute;
+              top: -50px;
+              left: 100px;
+              .outercircle {
+                position: relative;
+                .innercircle {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// FOR SUBSCRIBE CONTAINER
+.footer {
+  padding: 70px 255px 30px 255px;
+  .footerdiv {
+    .upperdiv {
+      display: flex;
+      justify-content: space-between;
+      .upperdivleft {
+        padding: 32px 32px 0px 32px;
+        width: 570px;
+        height: 245px;
+        .upperdivleftheader {
+          margin-bottom: 15px;
+        }
+        .upperdivleftdesc {
+          margin-bottom: 40px;
+        }
+        .upperdivleftreg {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .upperdivleftregem {
+            input {
+              width: 300px;
+              margin-right: 30px;
+              padding: 16px 0 16px 16px;
+            }
+          }
+          button {
+            padding: 0px;
+            margin: 0px;
+            padding: 16px 32px 16px 32px;
+          }
+        }
+      }
+      .upperdivright {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        padding-right: 100px;
+      }
+    }
+    .lowerdiv {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px;
+      margin-top: 40px;
+    }
+    .mobilelowerdiv{
+      display: none;
+    }
+  }
+}

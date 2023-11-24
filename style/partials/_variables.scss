@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Libre+Baskerville&family=Lobster+Two&family=Plus+Jakarta+Sans&family=Poppins:wght@500&family=Roboto&display=swap");
+
+// Header Fonts and Stylings
+
+$description_font: "Plus Jakarta Sans", sans-serif;
+$banner: linear-gradient(to right, #362fcc, #5d55ff);
+$header_font_style: normal;
+$header_font_weight: 500;
+$header_font_size: 16px;
+$heaeder_line_height: 20px;
+$white_color: #ffffff;
+$grayish_color: #b6b3eb;
+$eight_border_radius: 8px;
+
+$seven_font_weight: 700;
+$four_font_weight: 400;
+$eighteen_font: 18px;
+$line_height: 23px;
+$button_padding: 24px 32px 24px 32px;
+
+$blackish_color: #1d1c31;
+
+// HEADER AND HERO STYLINGS
+.container {
+  background-image: $banner;
+  color: $white_color;
+
+  // HEADER STYLINGS
+
+  .rightheaderoption {
+    font-family: $description_font;
+    font-style: $header_font_style;
+    font-weight: $header_font_weight;
+    font-size: $header_font_size;
+    line-height: $heaeder_line_height;
+    color: $grayish_color;
+
+    #home {
+      color: $white_color;
+    }
+    button {
+      background: #ffffff1a;
+      border-radius: $eight_border_radius;
+      color: $white_color;
+    }
+  }
+
+  // HERO PART STYLING
+
+  .leftbannercontent {
+    .leftbannerfirst {
+      font-family: $description_font;
+      font-style: $header_font_style;
+      font-weight: $seven_font_weight;
+      font-size: 56px;
+      line-height: 70px;
+      letter-spacing: -0.02em;
+      color: $white_color;
+    }
+    .leftbannersecond {
+      font-family: $description_font;
+      font-style: $header_font_style;
+      font-weight: $header_font_style;
+      font-size: $eighteen_font;
+      line-height: $line_height;
+      color: $grayish_color;
+    }
+    .leftbannerbuttons {
+      .leftfirstbutton {
+        font-family: $description_font;
+        font-style: $header_font_style;
+        font-weight: $seven_font_weight;
+        font-size: $eighteen_font;
+        line-height: $line_height;
+        color: #110c64;
+        padding: $button_padding;
+        border-radius: $eight_border_radius;
+        background-color: $white_color;
+      }
+      .leftsecondbutton {
+        border: 1px solid #ffffff33;
+        border-radius: $eight_border_radius;
+        font-family: $description_font;
+        font-style: $header_font_style;
+        font-weight: $header_font_weight;
+        font-size: $eighteen_font;
+        line-height: $line_height;
+        padding: $button_padding;
+        color: $white_color;
+        background-color: transparent;
+      }
+    }
+    .banner h1 {
+      font-family: $description_font;
+      font-style: $header_font_style;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      color: $white_color;
+    }
+    .bannerstat p {
+      font-family: $description_font;
+      font-style: $header_font_style;
+      font-weight: $four_font_weight;
+      font-size: $header_font_size;
+      line-height: $heaeder_line_height;
+      color: $grayish_color;
+    }
+  }
+}
+
+// FOR BENEFITS CONTAINER
+.benefits_container {
+  // BENEFITS TITLE AND CARDS
+  .maintop {
+    p {
+      font-family: $description_font;
+      font-style: $header_font_style;
+      font-weight: $seven_font_weight;
+      font-size: 40px;
+      line-height: 52px;
+      letter-spacing: -0.02em;
+      color: #1d1c31;
+    }
+    .maincards {
+      .carditems:not(:first-child) {
+        border: 1px solid rgba(29, 28, 49, 0.1);
+      }
+      .carditems {
+        box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+        border-radius: $eight_border_radius;
+        padding: 32px 24px;
+
+        .carditems_name {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $seven_font_weight;
+          font-size: 20px;
+          line-height: 25px;
+          color: #1d1c31;
+          text-align: center;
+        }
+        .carditems_des {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $four_font_weight;
+          font-size: $header_font_size;
+          line-height: 28px;
+          text-align: center;
+          color: #1d1c3199;
+        }
+        .carditems_read {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $four_font_weight;
+          font-size: $header_font_size;
+          line-height: $heaeder_line_height;
+          display: flex;
+          align-items: center;
+          color: #5d55ff;
+        }
+      }
+    }
+  }
+
+  // BENEFITS PICTURES
+  .mainpictures {
+    .mainforefront {
+      background: $white_color;
+      box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+      border-radius: $eight_border_radius;
+      .forefronttext {
+        .uppertext {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 52px;
+          letter-spacing: -0.02em;
+          color: $blackish_color;
+        }
+        .lowertext {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $four_font_weight;
+          font-size: $header_font_size;
+          line-height: 28px;
+          color: rgba(29, 28, 49, 0.6);
+        }
+      }
+    }
+  }
+
+  // CLIENTS TESTIMONIALS
+  .clientsheader {
+    // CLIENTS TESTIMONIALS TITLE
+    .clientsheadertop {
+      .clientsheadertopleft {
+        font-family: $description_font;
+        font-style: $header_font_style;
+        font-weight: $seven_font_weight;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -0.02em;
+        color: $blackish_color;
+      }
+      .clientsheadertoparrow {
+        .clientsheadertoparrowdiv {
+          background-color: rgba(29, 28, 49, 0.05);
+          border-radius: 50px;
+        }
+      }
+    }
+    // CLIENTS TESTIMONIALS CARDS
+    .clientscards {
+      .clientitems {
+        color: black;
+        box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+        border-radius: 8px;
+        border: 1px solid rgba(29, 28, 49, 0.1);
+        .clientitemsdes {
+          .comment {
+            font-family: $description_font;
+            font-style: $header_font_style;
+            font-weight: $four_font_weight;
+            font-size: $header_font_size;
+            line-height: 32px;
+            border-bottom: 1px solid gray;
+          }
+          .clientcommentsinfo {
+            .userdetail {
+              .username {
+                font-family: "Poppins";
+                font-style: $header_font_style;
+                font-weight: $header_font_weight;
+                font-size: 20px;
+                line-height: 30px;
+              }
+              .userdate {
+                font-family: $description_font;
+                font-style: $header_font_style;
+                font-weight: $four_font_weight;
+                font-size: 14px;
+                line-height: 18px;
+                color: gray;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // PAGINATION OF CLIENTS TESTIMONIALS CARDS
+    .paginationrectangle {
+      #first_para {
+        background-color: rgba(93, 85, 255, 1);
+      }
+      .parallelogram {
+        transform: skew(-40deg);
+        background-color: rgba(29, 28, 49, 0.1);
+      }
+    }
+  }
+}
+
+// FOR GUIDELINE CONTAINER
+.guideline_container {
+  background-color: rgba(93, 85, 255, 1);
+  color: $white_color;
+  .timeline {
+    .uppertimeline {
+      .upperlefttimeline {
+        font-family: $description_font;
+        font-style: $header_font_style;
+        font-weight: $seven_font_weight;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -0.02em;
+        color: $white_color;
+      }
+      .upperrighttimeline {
+        font-family: $description_font;
+        font-style: $header_font_style;
+        font-weight: $four_font_weight;
+        font-size: $header_font_size;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    .lowertimeline {
+      // background-color: teal;
+      .descriptiondiv {
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        .innerarticondiv {
+          span {
+            font-family: $description_font;
+            font-style: $header_font_style;
+            font-weight: $four_font_weight;
+            font-size: $eighteen_font;
+            line-height: $line_height;
+            color: $white_color;
+          }
+        }
+      }
+      .buttonparent {
+        .buttonchildren {
+          .buttonelements {
+            button {
+              background: $white_color;
+              border-radius: $eight_border_radius;
+              font-family: $description_font;
+              font-style: $header_font_style;
+              font-weight: 600;
+              font-size: $eighteen_font;
+              line-height: $line_height;
+              color: $blackish_color;
+              border: none;
+            }
+          }
+        }
+      }
+      .lowerabovetimeline {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 35px;
+      }
+    }
+  }
+}
+
+// FOR SUBSCRIBE CONTAINER
+
+.footer {
+  background-color: rgba(93, 85, 255, 0.1);
+
+  .footerdiv {
+    .upperdiv {
+      .upperdivleft {
+        background-color: rgba(29, 28, 49, 1);
+        border-radius: $eight_border_radius;
+        color: $white_color;
+        .upperdivleftheader {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $seven_font_weight;
+          font-size: 20px;
+          line-height: 25px;
+          color: $white_color;
+        }
+        .upperdivleftdesc {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $four_font_weight;
+          font-size: 14px;
+          line-height: $line_height;
+          color: rgba(255, 255, 255, 0.6);
+        }
+        .upperdivleftreg {
+          border-radius: $eight_border_radius;
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $header_font_weight;
+          font-size: $header_font_size;
+          line-height: $heaeder_line_height;
+          .upperdivleftregem {
+            border-bottom: 1px solid $white_color;
+            input {
+              border: none;
+              outline: none;
+              background: transparent;
+              font-size: $header_font_size;
+              color: $white_color;
+            }
+            input::placeholder {
+              color: $white_color;
+            }
+          }
+        }
+        button {
+          border-radius: $eight_border_radius;
+          background-color: $white_color;
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: $seven_font_weight;
+          font-size: $header_font_size;
+          line-height: $heaeder_line_height;
+          border: none;
+          color: $blackish_color;
+        }
+      }
+      .upperdivright {
+        font-family: $description_font;
+        font-style: $header_font_style;
+        font-weight: $four_font_weight;
+        font-size: $header_font_size;
+        line-height: $heaeder_line_height;
+        color: rgba(29, 28, 49, 0.6);
+        #first {
+          font-family: $description_font;
+          font-style: $header_font_style;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: $line_height;
+          color: $blackish_color;
+        }
+      }
+    }
+    .lowerdiv {
+      border-top: 2px solid rgba(29, 28, 49, 0.1);
+      font-family: $description_font;
+      font-style: $header_font_style;
+      font-weight: $four_font_weight;
+      font-size: $header_font_size;
+      line-height: $heaeder_line_height;
+      color: rgba(29, 28, 49, 0.6);
+    }
+  }
+}
